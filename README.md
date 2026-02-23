@@ -33,7 +33,7 @@ The routers are connected in a triangle topology using /30 point-to-point WAN li
 -	R2 ↔ R3 → 10.23.1.0/30
 Each router also contains a loopback interface used to simulate internal networks and verify OSPF route advertisement. Although this lab does not simulate failover scenarios, the triangular WAN design reflects how real enterprise networks introduce redundancy to avoid single points of failure. 
 Network Topology Diagram
- 
+![Network Topology](Images/Network-Topology.png)
 ## IP Addressing
 | Device | IP Address       | Subnet Mask | Default Gateway |
 |--------|------------------|------------|-----------------|
@@ -380,26 +380,26 @@ From each PC:
 Screenshots of all verification commands are included below to demonstrate successful adjacency, route learning, and end-to-end connectivity.
 ## Verification Screenshots
 ### R1 OSPF Neighbors
- 
+![R1 OSPF Neighbors](Images/R1-show-ip-ospf-neighbor.png)
 ### R2 OSPF Neighbors
- 
+![R2 OSPF Neighbors](Images/R2-show-ip-ospf-neighbor.png)
 ### R3 OSPF Neighbors
- 
+![R3 OSPF Neighbors](Images/R3-show-ip-ospf-neighbor.png)
 ### R1 OSPF Routes
- 
+![R1 OSPF Routes](Images/R1-ospf-routes.png)
 ### Switch VLAN & Trunk Verification
 ### SW-HQ
- 
+![SW-HQ VLAN & Trunk](Images/SW-HQ-vlan-&-trunk.png)
 ### SW-B
- 
+![SW-B VLAN & Trunk](Images/SW-B-vlan-&-trunk.png)
 ### SW-C
- 
+![SW-C VLAN & Trunk](Images/SW-C-vlan-&-trunk.png)
 ### PC1 Ping Results
- 
+![PC1 Ping Results](Images/PC1-pings.png)
 ### PC2 Ping Results
- 
+![PC2 Ping Results](Images/PC2-pings.png) 
 ### PC3 Ping Results
- 
+![PC3 Ping Results](Images/PC3-pings.png) 
 
 ## Troubleshooting 
 Issue 1 – Trunk Encapsulation Error
