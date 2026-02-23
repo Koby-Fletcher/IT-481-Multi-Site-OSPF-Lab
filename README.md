@@ -368,7 +368,7 @@ show ip ospf neighbor
 show ip route ospf
 ```
 
-#### Switch Verification
+### Switch Verification
 ```cisco
 show vlan brief
 show interfaces trunk
