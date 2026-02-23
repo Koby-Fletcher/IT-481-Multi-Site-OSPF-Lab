@@ -1,5 +1,6 @@
 # IT-481-Multi-Site-OSPF-Lab
-Three-site enterprise network using VLAN segmentation, 802.1Q trunking, router-on-a-stick, and OSPF Area 0 dynamic routing.
+## Project Summary
+Designed and implemented a three-site enterprise-style network using VLAN segmentation, 802.1Q trunking, router-on-a-stick inter-VLAN routing, and OSPF Area 0 dynamic routing with full end-to-end verification and troubleshooting.
 ## Technologies Used
 - Cisco IOS
 - VLAN (802.1Q)
@@ -417,3 +418,7 @@ At one point, OSPF neighbors were not forming because different OSPF process IDs
 ## Conclusion
 This lab reinforced the relationship between Layer 2 switching and Layer 3 routing. Although OSPF configuration was important, most connectivity failures were caused by VLAN and trunk misconfiguration. The biggest lesson learned is to always verify Layer 2 configuration before troubleshooting routing protocols.
 The most important lesson from this lab is to troubleshoot methodically. When pings fail, start at Layer 2 and work upward. Verifying trunk status, VLAN assignment, and interface states before analyzing routing protocols prevents unnecessary reconfiguration and saves significant time.
+---
+**Author:** Koby Fletcher  
+Illinois State University  
+Network & Security Management
